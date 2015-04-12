@@ -50,3 +50,11 @@ hotkey.bind(shiftctrl, 'M', function()
     window.focusedwindow():maximize()
 end
 )
+
+hotkey.bind(ctrlaltcmd, 'H', function()
+    local screens = screen.allscreens()
+    for k,v in pairs(screens) do
+        alert.show(k)
+    end
+end
+)
